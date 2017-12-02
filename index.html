@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="iz">
   <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./tabs.css">
@@ -12,20 +11,22 @@
 <body>
   <script defer="defer" src="./tabs.js"></script>
 	<header class="header">
-    <h1 class="header__name">Patrick Sandoval</h1>
 		<ul class="header__nav">
 			<li class="nav__item"><a href="#">Home</a></li>
-			<li class="nav__item"><a href="#about.html">About</a></li>
-			<li class="nav__item"><a href="#projects.html">Projects</a></li>
-			<li class="nav__item"><a href="#contact.html">Contact Me</a></li>
+			<li class="nav__item"><a href="#about">About</a></li>
+			<li class="nav__item"><a href="#projects">Projects</a></li>
+			<li class="nav__item"><a href="#contact">Contact Me</a></li>
 		</ul>
-	</header>
+  </header>
+  <h1 class="header__name"><span>P</span><span>A</span><span>T</span><span>R</span><span>I</span><span>C</span><span>K</span>
+    <br>
+    <span>S</span><span>A</span><span>N</span><span>D</span><span>O</span><span>V</span><span>A</span><span>L</span></h1>
 	<div class="section">
 		<h3 class="section__heading">Welcome</h3>
 		<div class="section__content">
       <p class="section__text">Welcome! I hope you enjoy going through my portfolio site. You can check out my Github or Linkedin profiles at the icons at the bottom of the page or feel free to contact me at the links below.</p>
 		</div>
-		<h3 class="section__heading">About Me</h3>
+		<h3 class="section__heading" id="about">About Me</h3>
 		<div class="section__content section__about">
       <img src="img/photo.jpg" alt="">
       <div class="text__container">
@@ -35,27 +36,23 @@
       </div>
 		</div>
     <h3 class="section__heading">Projects</h3>
-    <div class="Tabs">
+    <div class="Tabs" id="projects">
       <div class="section__content section__projects">
-          <img src="http://via.placeholder.com/200x150" class="Tabs__link" data-tab="1" alt="">
-          <img src="http://via.placeholder.com/200x150" class="Tabs__link" data-tab="2" alt="">
+          <img src="img/starwars.jpeg" class="Tabs__link" data-tab="1" alt="">
+          <img src="img/movie_trailer.png" class="Tabs__link" data-tab="2" alt="">
           <img src="http://via.placeholder.com/200x150" class="Tabs__link" data-tab="3" alt="">
           <img src="http://via.placeholder.com/200x150" class="Tabs__link" data-tab="4" alt="">
       </div>
       <div class="Tabs__item" data-tab="1">
         <div class="section__text__primary">
-          <div class="project__title">Twitter Clone</div>
+          <div class="project__title"><a href="https://github.com/patsand24/pyp-w2-gw-starwars-api">Star Wars API</a></div>
           <br>
-          <div class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis
-            lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero,
-            at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat
-            porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse
-            platea dictumst.</div>
+          <div class="section__text">Client for the Star Wars API built using Python in a RESTful structure. The goal is to be able to pull data from the Star Wars API in JSON format to use for comparisons in your own applications.</div>
         </div>
       </div>
         <div class="Tabs__item" data-tab="2">
           <div class="section__text__primary">
-            <div class="project__title">Project # 2</div>
+            <div class="project__title"><a href="https://github.com/patsand24/movie_trailer_site">Movie Trailer Site</a></div>
             <br>
             <div class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis
               lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis
@@ -88,7 +85,7 @@
         </div>
       </div>
 		<h3 class="section__heading">Contact Me</h3>
-		<div class="section__content">
+		<div class="section__content" id="contact">
       <address>
         Phone:
         <a href="tel:+19495257098">949-525-7098</a>

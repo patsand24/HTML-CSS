@@ -2,15 +2,18 @@
 
 body {
 	margin: 0;
-	background-color: #81A538;
-	color: #fff;
+	/* background-color: #81A538; */
+	color: #eee;
+	background: url('img/waterfall.jpeg') no-repeat, linear-gradient(#6de590, #e67478);
+	background-blend-mode: multiply;
+	background-size: cover;
 }
 
 /* Header Items */
 
 .header {
-	background: #B1803C;
-	border-bottom: solid #D48E6A;
+	/* background: #B1803C;
+	border-bottom: solid #D48E6A; */
 	padding: .5em 1.5em .5em 1.5em;
 	display: flex;
 	justify-content: space-between;
@@ -19,10 +22,11 @@ body {
 .header__name {
 	font-family: 'Changa One', cursive;
 	margin: 15px 0;
-	font-size: 1.75em;
+	font-size: 9em;
 	font-weight: normal;
-	line-height: 0.8em;
-	color: #fff;
+	line-height: 1;
+	letter-spacing: -1.2rem;
+	color: #801b3a;
 }
 
 .header__name,
@@ -42,7 +46,7 @@ body {
 }
 
 .nav__item a {
-	color: #fff;
+	color: #eee;
 	font-size: .95em;
 	text-decoration: none;
 	font-weight: 800;
@@ -59,12 +63,16 @@ body {
 	flex-flow: column;
 }
 
-.section__text a {
+.section__text a,
+.section__content a,
+.project__title a {
 	text-decoration: none;
 	color: rgb(77, 113, 176);
 }
 
-.section__text a:hover {
+.section__text a:hover,
+.section__content a:hover,
+.project__title a:hover {
 	color: #079468;
 }
 
@@ -113,7 +121,70 @@ body {
 	height: 150px;
 }
 
-	.section__projects img {
+.section__projects img {
 	cursor: pointer;
+	width: 200px;
+	height: 150px;
 }
 
+/* Test Styles */
+
+span:nth-child(2) {
+	color: #164d67;
+}
+
+span:nth-child(3) {
+	color: #6b845d;
+}
+
+span:nth-child(4) {
+	color: #801b3a;
+}
+
+span:nth-child(5) {
+	color: #164d67;
+}
+
+span:nth-child(6) {
+	color: #6b845d;
+}
+
+span:nth-child(7) {
+	color: #801b3a;
+}
+
+span:nth-child(8) {
+	color: #801b3a;
+}
+
+span:nth-child(9) {
+	color: #164d67;
+}
+
+span:nth-child(10) {
+	color: #6b845d;
+}
+
+span:nth-child(11) {
+	color: #801b3a;
+}
+
+span:nth-child(12) {
+	color: #164d67;
+}
+
+span:nth-child(13) {
+	color: #6b845d;
+}
+
+span:nth-child(14) {
+	color: #801b3a;
+}
+
+span:nth-child(15) {
+	color: #164d67;
+}
+
+h1 span {
+	mix-blend-mode: screen;
+}
